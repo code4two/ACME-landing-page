@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME Software Lab</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+    <header class="bg-sky-100 pb-6">
+        <nav class="flex flex-row justify-between font-medium text-lg pt-3 xl:px-10 px-4 sm:gap-14 md:gap-20 lg:gap-14 xl:gap-20 sm:text-sm md:text-lg fixed top-0 left-0 w-full bg-white shadow py-3 z-50">
+            <div class="flex flex-row items-center">
+                <h1 class="font-bold text-blue-900">ACME</h1>
+            </div>
+            <div class="block sm:hidden">
+                <h3>Your Tech Software Lab</h3>
+            </div>
+            <div class="hidden lg:flex lg:items-center lg:border-1 lg:border-blue-900 lg:rounded-md lg:block">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass text-gray-700 mr-1 ml-2"></i>
+                </div>
+                <div>
+                    <input class="font-normal text-md outline-none text-gray-700 lg:w-35 xl:w-65" type="text" name="" id="" placeholder="Want to learn?">
+                </div>
+                <div>
+                    <a class="bg-slate-100 rounded-md text-blue-900 py-2 px-2" href="#">Explore <span><i class="fa-solid fa-chevron-down ml-1 text-blue-900"></i></span></a>
+                </div>
+            </div>
+            <ul class="flex flex-row gap-2 items-center sm:gap-3 xl:gap-4">
+                <li><a class="text-blue-900 hidden sm:block" href="Homepage.html">Home</a></li>
+                <li><a class="hover:border-b-2 hover:border-blue-900 hidden sm:block" href="aboutUs.html">About</a></li>
+                <li><a class="hover:border-b-2 hover:border-blue-900 hidden sm:block" href="webDev.html" id="bag">Courses</a></li>
+                <li><a class="hover:border-b-2 hover:border-blue-900 hidden sm:block" href="contactUs.html">Contact Us</a></li>
+                <li><a class="hover:border-b-2 hover:border-blue-900 hidden sm:block" href="blog.html">Blog</a></li>
+            </ul>
+            <div class="flex flex-row items-center hidden sm:block">
+                <a class="hover:border-b-2 hover:border-blue-900 sm:pr-2" href="SignUp.html">Sign Up</a>
+                <button class="bg-blue-900 rounded-md p-2 text-white"><a href="#login.html">Login</a></button>
+            </div>
+            <ul class="flex flex-col items-center block sm:hidden cursor-pointer">
+                <li class="w-10 h-1 bg-blue-900 mb-1"></li>
+                <li class="w-10 h-1 bg-blue-900 mb-1"></li>
+                <li class="w-10 h-1 bg-blue-900"></li>
+            </ul>
+            <!-- NAVIGATION MOBILE CONTENT -->
+            <div id="dropdownMenu" class="absolute w-100 hidden -mt-3 font-semibold bg-white rounded shadow-lg p-2 py-5">
+                <div class="flex flex-col px-2">
+                    <div class="flex flex-row justify-end">
+                        <ul class="flex flex-col items-center cursor-pointer">
+                            <li class="w-10 h-1 bg-blue-900 mb-1"></li>
+                            <li class="w-10 h-1 bg-blue-900 mb-1"></li>
+                        </ul>
+                    </div>
+                    <ul class="flex flex-col mb-3 mt-3">
+                        <li><a class="hover:text-white hover:bg-blue-900 block hover:rounded-md hover:pl-4 hover:py-1" href="Homepage.html">Home</a></li>
+                        <li><a class="hover:text-white hover:bg-blue-900 block hover:rounded-md hover:pl-4 hover:py-1" href="aboutUs.html">About</a></li>
+                        <li><a class="hover:text-white hover:bg-blue-900 block hover:rounded-md hover:pl-4 hover:py-1" href="webDev.html" id="bag">Courses</a></li>
+                        <li><a class="hover:text-white hover:bg-blue-900 block hover:rounded-md hover:pl-4 hover:py-1" href="contactUs.html">Contact Us</a></li>
+                        <li><a class="hover:text-white hover:bg-blue-900 block hover:rounded-md hover:pl-4 hover:py-1" href="blog.html">Blog</a></li>
+                    </ul>
+                    <div class="flex flex-row justify-between border-t-1 border-blue-900 pt-2">
+                        <a class="hover:text-white hover:bg-blue-900 block hover:rounded-md block hover:p-1 hover:px-3" href="#">SIGN UP</a>
+                        <a class="hover:text-white hover:bg-blue-900 block hover:rounded-md block hover:p-1 hover:px-3" href="#">LOGIN</a>
+                    </div>
+                </div>
+             </div>
+        </nav>
+        <section class="lg:grid lg:grid-cols-12 container px-4 xl:px-10 pt-18 lg:pb-14 xl:pb-4">
+            <div class="mt-2 sm:mt-6 xl:mt-14 lg:col-span-6 lg:w-120 xl:w-160">
+                <div class="font-bold text-3xl lg:text-5xl lg:mb-6 lg:mt-6 xl:text-6xl">
+                    <h1>Elevate Your <span class="text-blue-900">Tech Skills </span>At ACME</h1>
+                </div>
+                <div class="font-normal text-lg text-gray-700 my-2 lg:mb-6 xl:my-8">
+                    <p>Our comprehensive training programme are designed to equip you with the skills needed to thrive in the digital age</p>
+                </div>
+                <div class="flex flex-row gap-4 text-gray-700 mt-4 lg:gap-6">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-wand-magic-sparkles text-violet-950"></i>
+                        <p>Data Science</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-boxes-packing text-orange-600"></i>
+                        <p>Web Development</p>
+                    </div>
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-lightbulb text-indigo-600"></i>
+                        <p>Creative Design</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:col-span-6 lg:mt-2 xl:flex xl:flex xl:justify-end lg:flex lg:justify-center hidden lg:block">
+                <div class="relative z-10">
+                    <img class="w-full xl:w-115 xl:h-115 lg:h-104 lg:w-104 rounded-4xl rounded-full" src="Images/E1.jpg" alt="homepageImage">
+                    <div class="text-center font-semibold relative z-20 lg:-mt-100 lg:ml-80 xl:-mt-110 ml-90">
+                        <div class="bg-white xl:p-1 lg:p-1 shadow-sm inline-block border border-blue-900 rounded-md">
+                            <div class="flex justify-center">
+                                <ul>
+                                    <li class="w-12 h-12 rounded-full border border-4 border-blue-900"></li>
+                                </ul>
+                            </div>
+                            <div class="mt-1">
+                                <h1 class="font-bold text-xl">5K+</h1>
+                                <p class="text-gray-700 font-normal">Video Courses</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-start font-semibold -ml-8 mb-30 relative z-20">
+                        <div class="bg-white xl:p-1 lg:p-1 shadow-sm inline-block border border-blue-900 rounded-md">
+                            <div class="flex gap-2">
+                                <div class="text-blue-900">
+                                    <i class="fa-solid fa-desktop"></i>
+                                </div>
+                                <div>
+                                    <h1 class="font-bold text-xl">2K+</h1>                                        
+                                    <p class="text-gray-700 font-normal ">Video Courses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center font-semibold relative -mt-2 z-20 ml-90 lg:ml-80">
+                        <div class="flex gap-4 bg-white xl:p-1 lg:p-1 shadow-sm inline-block border border-blue-900 rounded-md">
+                            <div class="flex gap-2">
+                                <div class="text-blue-900">
+                                    <i class="fa-solid fa-desktop"></i>
+                                </div>
+                                <div>
+                                    <h1 class="text-start text-gray-700 font-normal">Tutors</h1>
+                                    <p class="font-bold text-xl">250+</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative z-20 mb-11 lg:hidden xl:block">
+                        <ul>
+                            <li class="xl:w-12 xl:h-12 rounded-full bg-blue-900"></li>
+                        </ul>
+                    </div>
+                </div>               
+            </div>
+        </section>
+        <section class="hidden xl:block xl:container xl:px-8 xl:mt-2">
+            <div class="flex justify-between items-center font-normal">
+                <div>
+                    <h1 class="text-3xl font-bold text-blue-900">250+</h1>
+                    <h6>Collaboration</h6>
+                </div>
+                <div>
+                    <h2 class="font-bold text-gray-700 text-xl">duolingo</h2>
+                </div>
+                <div>
+                    <h5 class="font-normal text-gray-700 text-xl">Codecov</h5>
+                </div>
+                <div>
+                    <h6 class="font-normal text-gray-700 text-xl">Testing</h6>
+                </div>
+                <div>
+                    <h5 class="font-normal text-gray-700 text-xl">magic leap</h5>
+                </div>
+            </div>
+            <div class="grid grid-cols-3 mt-3 gap-4">
+
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="mt-6 container px-4 xl:px-8 xl:mt-14">
+            <div>
+                <h4 class="text-blue-900 mb-1 xl:mb-3 font-medium">Explore Programs</h4>
+                <h1 class="text-3xl xl:text-4xl font-bold mb-1 xl:mb-3">Our Most Popular Courses</h1>
+                <p class="font-normal text-gray-700 text-lg">
+                    Join our famous courses, the knowldege 
+                    provided will definitely be useful for you
+                </p>
+            </div>
+            <div class="grid grid-cols-2 xl:grid-cols-3 mt-6 xl:mt-4 gap-2 xl:gap-4">
+                <div class="p-2 border-1 border-slate-50 outline-none rounded-md shadow-md xl:p-4">
+                    <img class="mb-2 w-full xl:mb-5" src="Images/learning6.jpg" alt="computerBasics">
+                    <h4 class="font-semibold text-blue-900 mb-2">Computer Basics</h4>
+                    <div class="flex justify-between mb-2 items-center">
+                        <h2 class="font-bold text-md xl:text-2xl">Computer Proficiency</h2>
+                        <i class="fa-solid fa-square-arrow-up-right"></i>
+                    </div>
+                    <p class="mb-3 text-gray-700">
+                        Learn Basics of Computer Hardware & Software
+                    </p>
+                    <div class="flex gap-3 mb-3 text-gray-700">
+                        <h4 class="font-normal text-lg text-blue-900 xl:text-xl">4.3</h4>
+                        <div>
+                            <ul class="text-yellow-400">
+                                <i class="fa-solid fa-star text-yellow"></i>
+                                <i class="fa-solid fa-star text-yellow"></i>
+                                <i class="fa-solid fa-star text-yellow"></i>
+                                <i class="fa-solid fa-star text-yellow"></i>
+                                <i class="fa-solid fa-star text-yellow"></i>
+                            </ul>
+                        </div>
+                        <p class="text-md font-normal xl:text-lg">(16,325)</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex gap-2">
+                            <img src="images/person1.jpg" alt="profileP" class="w-10 h-10 rounded-full xl:w-12 xl:h-12">
+                            <div class="items-center">
+                                <h2 class="font-bold">Jane Cooper</h2>
+                                <p class="text-gray-700 text-md xl:text-xl">200 Enrolled</p>
+                            </div>
+                        </div>
+                        <div class="font-bold text-blue-900 text-lg flex items-center xl:text-3xl">
+                            <h1>#50,000</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-2 border-1 border-slate-50 outline-none rounded-md shadow-md xl:p-4">
+                    <img class="mb-2 w-full xl:mb-5" src="Images/webdesign.jpg" alt="Data">
+                    <h4 class="font-semibold text-blue-900 mb-2">Data</h4>
+                    <div class="flex justify-between mb-2 items-center">
+                        <h2 class="font-bold text-md xl:text-2xl">Data Science</h2>
+                        <i class="fa-solid fa-square-arrow-up-right"></i>
+                    </div>
+                    <p class="mb-3 text-gray-700">
+                        Learn Data Analysis in Decision Making
+                    </p>
+                    <div class="flex gap-3 mb-3 text-gray-700">
+                        <h4 class="font-normal text-lg text-blue-900 xl:text-xl">3.9</h4>
+                        <div>
+                            <ul class="text-yellow-400">
+                                <i class="fa-solid fa-star text-yellow"></i>
+                                <i class="fa-solid fa-star text-yellow"></i>
+                                <i class="fa-solid fa-star text-yellow"></i>
+                                <i class="fa-solid fa-star text-yellow"></i>
+                                <i class="fa-solid fa-star text-yellow"></i>
+                            </ul>
+                        </div>
+                        <p class="text-md font-normal xl:text-lg">(832)</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex gap-2">
+                            <img src="images/T2.jpg" alt="profileP" class="w-10 h-10 rounded-full xl:w-12 xl:h-12">
+                            <div class="items-center">
+                                <h2 class="font-bold">Elon Musk</h2>
+                                <p class="text-gray-700 text-md xl:text-xl">2001 Enrolled</p>
+                            </div>
+                        </div>
+                        <div class="font-bold text-blue-900 text-lg flex items-center xl:text-3xl">
+                            <h1>#60,000</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden xl:block p-2 border-1 border-slate-50 outline-none rounded-md shadow-md xl:p-4 ">
+                    <img class="mb-2 w-full xl:mb-5" src="Images/learning5.jpg" alt="computerBasics">
+                    <h4 class="font-semibold text-blue-900 mb-2">Web</h4>
+                    <div class="flex justify-between mb-2 items-center">
+                        <h2 class="font-bold text-md xl:text-2xl">Web Development</h2>
+                        <i class="fa-solid fa-square-arrow-up-right"></i>
+                    </div>
+                    <p class="mb-3 text-gray-700">
+                        Learn HTML and its Structure to create web Pages
+                    </p>
+                    <div class="flex gap-3 mb-3 text-gray-700">
+                        <h4 class="font-normal text-lg text-blue-900 xl:text-xl">4.2</h4>
+                        <div>
+                            <ul class="text-yellow-400">
+                                <i class="fa-solid fa-star text-yellow"></i>
+                                <i class="fa-solid fa-star text-yellow"></i>
+                                <i class="fa-solid fa-star text-yellow"></i>
+                                <i class="fa-solid fa-star text-yellow"></i>
+                                <i class="fa-solid fa-star text-yellow"></i>
+                            </ul>
+                        </div>
+                        <p class="text-md font-normal xl:text-lg">(125)</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <div class="flex gap-2">
+                            <img src="images/person2.jpg" alt="profileP" class="w-10 h-10 rounded-full xl:w-12 xl:h-12">
+                            <div class="items-center">
+                                <h2 class="font-bold">Esther Howard</h2>
+                                <p class="text-gray-700 text-md xl:text-xl">200 Enrolled</p>
+                            </div>
+                        </div>
+                        <div class="font-bold text-blue-900 text-lg flex items-center xl:text-3xl">
+                            <h1>#60,000</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mt-3 container px-4 pt-2 xl:px-8">
+            <ul class="flex justify-center mb-8 xl:mb-10 gap-2">
+                <li class="w-10 sm:w-14 rounded-xl bg-blue-900"></li>
+                <li class="w-3 h-3 rounded-full bg-slate-200"></li>
+                <li class="w-3 h-3 rounded-full bg-slate-200"></li>
+            </ul>
+            <div class="text-center font-semibold">
+                <a class="bg-slate-50 font-bold py-2 px-4 sm:py-3 sm:px-6 border border-slate-300 rounded-md shadow-sm" href="#">Explore All Programs</a>
+            </div>
+            <div class="text-center mt-10 sm:mt-16">
+                <h3 class="text-blue-900 font-bold mb-2">Tutors</h3>
+                <h1 class="font-bold text-3xl sm:text-4xl mb-2">Meet the Heroes</h1>
+                <p class="text-gray-700">On Weekends, UX instructors from all over the world instruct millions of students.
+                </p>
+                <p class="text-gray-700">
+                    We offer the knowldege and activities
+                </p>
+            </div>
+            <div class="grid grid-cols-2 xl:grid-cols-4 mt-6 xl:mt-4 gap-2 xl:gap-4">
+                <div class="mt-3 p-6 text-center border-1 border-sky-100 outline-none rounded-md bg-blue-50/30">
+                    <div class="flex justify-center">
+                        <img class="mb-3 w-25 h-25 rounded-full" src="Images/T2.jpg" alt="">
+                    </div>
+                    <h1 class="mb-3 font-medium text-xl">Theresa Webb</h1>
+                    <div class="mb-3 text-blue-900 text-xl">
+                        <h2>Application Support Analyst Lead</h2>
+                    </div>
+                    <div class="text-xl mb-4 text-gray-700">
+                        <h3>Former co-founder of Opendoor. Early staff at Spotify and Clearbit.</h3>
+                    </div>
+                    <div class="flex gap-4 justify-center text-gray-700">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div class="mt-3 p-6 text-center border-1 border-sky-100 outline-none rounded-md bg-blue-50/30">
+                    <div class="flex justify-center">
+                       <img class="mb-3 w-25 h-25 rounded-full" src="Images/person4.jpg" alt=""> 
+                    </div>
+                    <h1 class="mb-3 font-medium text-xl">Courtney Henry</h1>
+                    <div class="mb-3 text-blue-900 text-xl">
+                        <h2>Director Analytics and Planning</h2>
+                    </div>
+                    <div class="text-xl mb-4 text-gray-700">
+                        <h3>Led engineering teams at Figma, Pitcch, and Protocol Labs.</h3>
+                    </div>
+                    <div class="flex gap-4 justify-center gap-4 text-gray-700">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div class="hidden xl:block mt-3 p-6 text-center border-1 border-sky-100 outline-none rounded-md bg-blue-50/30">
+                    <div class="flex justify-center">
+                       <img class="mb-3 w-25 h-25 rounded-full" src="Images/e1.jpg" alt=""> 
+                    </div>
+                    <h1 class="mb-3 font-medium text-xl">ALbert Flores</h1>
+                    <div class="mb-10 text-blue-900 text-xl">
+                        <h2>Career Educator</h2>
+                    </div>
+                    <div class="text-xl mb-4 text-gray-700">
+                        <h3>Former PM for Linear, Lambda school, and On Deck.</h3>
+                    </div>
+                    <div class="flex gap-4 justify-center text-gray-700">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div class="hidden xl:block mt-3 p-6 text-center border-1 border-sky-100 outline-none rounded-md bg-blue-50/30">
+                    <div class="flex justify-center">
+                       <img class="mb-3 w-25 h-25 rounded-full" src="Images/person2.jpg" alt=""> 
+                    </div>
+                    <h1 class="mb-3 font-medium text-xl">Marvin Mckinney</h1>
+                    <div class="mb-3 text-blue-900 text-xl">
+                        <h2>Internships program & Operations Manager</h2>
+                    </div>
+                    <div class="text-xl mb-4 text-gray-700">
+                        <h3>Former frontend dev for Linear, Coinbase, and Postscript</h3>
+                    </div>
+                    <div class="flex justify-center gap-4 text-gray-700">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    <article class="bg-sky-50 mt-12 sm:mt-15">
+        <section class="mt-10 inline-block container px-4 xl:px-8">
+            <ul class="flex justify-center items-center gap-5 mb-2">
+                <li class="w-18 h-1 bg-blue-900"></li>
+                <li class="text-gray-600 font-normal text-xl">Testimonial</li>
+            </ul>
+            <div class="text-center font-medium sm:text-3xl text-2xl">
+                <h1>Student Testimonial</h1>
+            </div>
+            <div class="grid grid-cols-2 xl:grid-cols-3 mt-6 xl:mt-4 gap-2 xl:gap-4">
+                <div class="p-4 mb-14 bg-white border-1 border-slate-50 outline-none rounded-md">
+                    <div class="flex sm:flex-row flex-col gap-4">
+                        <div class="flex justify-center">
+                            <img class="w-28 rounded-full" src="Images/person3.jpg" alt="">
+                        </div>
+                        <div>
+                            <h1 class="font-bold text-xl mb-2 text-center lg:text-start">Michael Wong</h1>
+                            <h4 class="mb-2 text-center xl:text-start">UI/UX Design Student</h4>
+                            <div class="lg:flex hidden lg:block gap-3">
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold">4.9</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-4 text-center lg:text-start">
+                        <p>ACME's tech training program was incredible! 
+                            The Instructors were knowledgeable and approachable, 
+                            making complex topics easy to understand. 
+                            I gained practical skills in coding.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-4 mb-14 bg-white border-1 border-slate-50 outline-none rounded-md">
+                    <div class="flex sm:flex-row flex-col gap-4">
+                        <div class="flex justify-center">
+                            <img class="w-28 rounded-full" src="Images/E1.jpg" alt="">
+                        </div>
+                        <div>
+                            <h1 class="font-bold text-xl mb-2 text-center lg:text-start">Avril Song</h1>
+                            <h4 class="mb-2 text-center xl:text-start">Web Development Student</h4>
+                            <div class="lg:flex hidden lg:block gap-3">
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold">4.8</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-4 text-center lg:text-start">
+                        <p>ACME's tech training program was incredible! 
+                            The Instructors were knowledgeable and approachable, 
+                            making complex topics easy to understand. 
+                            I gained practical skills in coding.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-4 mb-14 bg-white border-1 border-slate-50 outline-none rounded-md hidden xl:block">
+                    <div class="flex sm:flex-row flex-col gap-4">
+                        <div class="flex justify-center">
+                            <img class="w-28 rounded-full" src="Images/person2.jpg" alt="">
+                        </div>
+                        <div>
+                            <h1 class="font-bold text-xl mb-2 text-center xl:text-start">Jeane Wood</h1>
+                            <h4 class="mb-2 text-center xl:text-start">Data Science Student</h4>
+                            <div class="lg:flex hidden lg:block gap-3">
+                                <div>
+                                    <i class="fa-solid fa-star text-yellow-400"></i>
+                                </div>
+                                <div>
+                                    <h5 class="font-bold">5.0</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-4 text-center lg:text-start">
+                        <p>ACME's tech training program was incredible! 
+                            The Instructors were knowledgeable and approachable, 
+                            making complex topics easy to understand. 
+                            I gained practical skills in coding.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </article>
+        <section class="mt-5 sm:mt-10 container px-4 xl:px-8 hidden xl:block">
+            <ul class="flex items-center justify-center gap-5 sm:mt-4 mb-2">
+                <!-- Structure the blue line and the blog side by side -->
+                <li class="w-18 h-1 bg-blue-900"></li>
+                <li class="items-center text-gray-600 font-normal text-xl">Blog</li>
+            </ul>
+            <div class="text-center font-medium text-3xl mb-4">
+                <h1>Browse articles</h1>
+            </div>
+            <h1 class="font-bold text-xl">Our recent blogs</h1>
+        </section>
+        <section class="mt-2 sm:mt-3 container mx-6 p-2 xl:px-8 hidden xl:block">
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
+                <div class="flex gap-2">
+                    <div>
+                        <img class="w-full" src="Images/webdesign2.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                        <h1 class="font-semibold text-blue-900 text-lg mb-2">November 16th, 2024</h1>
+                        <h4 class="font-bold text-xl mb-2">Three Pillars of User Design</h4>
+                        <p class="mb-5 text-gray-700">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt debitis laboriosam natus, dolore nam eius?
+                            <!-- Delight can be experienced viscerally, 
+                                behaviourally, and reflectively.
+                            A great design is... -->
+                        </p>
+                        <div>
+                            <a class="text-blue-900 underline font-bold" href="#">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <div>
+                        <img class="w-full" src="Images/learning6.jpg" alt="">
+                    </div>
+                    <div>
+                        <h1 class="font-semibold text-blue-900 text-lg mb-2">September 24th, 2024</h1>
+                        <h4 class="font-bold text-xl mb-2">UX Mapping Methods</h4>
+                        <p class="mb-5 text-gray-700">
+                            Visual-design principles can be applied 
+                            consistently throughout the process of creating a polished UX map...
+                        </p>
+                        <div>
+                            <a class="text-blue-900 underline font-bold" href="#">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <div>
+                        <img class="w-full" src="Images/learning5.jpg" alt="">
+                    </div>
+                    <div>
+                        <h1 class="font-semibold text-blue-900 text-lg mb-2">June 5th, 2025</h1>
+                        <h4 class="font-bold text-xl mb-2">Three Pillars of User Design</h4>
+                        <p class="mb-5 text-gray-700">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Animi, voluptates quo. 
+                            Laudantium asperiores saepe.
+                        </p>
+                        <div>
+                            <a class="text-blue-900 underline font-bold" href="#">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-2">
+                    <div>
+                        <img class="w-full" src="Images/webdesign.jpg" alt="">
+                    </div>
+                    <div>
+                        <h1 class="font-semibold text-blue-900 text-lg mb-2">June 5th, 2025</h1>
+                        <h4 class="font-bold text-xl mb-2">Three Pillars of User Design</h4>
+                        <p class="mb-5 text-gray-700">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Animi, voluptates quo. 
+                                Laudantium asperiores saepe.
+                        </p>
+                        <div>
+                            <a class="text-blue-900 underline font-bold" href="#">Read More...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center text-white font-semibold mt-12 mb-2 hidden xl:block">
+                <div class="bg-blue-900 py-4 px-18 rounded-sm inline-block">
+                    <a href="blog.html">View all <span><i class="fa-solid fa-arrow-right ml-4"></i></span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-900 xl:my-10">
+        <section class="container px-4 p-2 xl:px-8">
+            <div class="grid xl:grid-cols-4 grid-cols-1 mt-5 gap-3 mb-4 pt-0 xl:pt-6 pb-2 text-white">
+                <div class="mt-3 text-center xl:text-start">
+                    <div>
+                        <h1 class="font-bold text-blue-900 text-2xl xl:mb-3 ml-6">ACME</h1>
+                    </div>
+                    <p class="font-normal text-lg text-gray-400">Where your journey towards technological experience begins</p>
+                </div>
+                <div class="mt-3 hidden xl:block">
+                    <h1 class="font-semibold text-3xl mb-3">Quick links</h1>
+                    <ul class="font-normal text-lg text-gray-400">
+                        <li class="mb-2"><a href="aboutUs.html">About Us</a></li>
+                        <li class="mb-2"><a href="#">Our Class</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                        <li class="mb-2"><a href="contactUs.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="mt-3 hidden xl:block">
+                    <h1 class="font-semibold text-3xl mb-3">Resources</h1>
+                    <ul class="font-normal text-lg text-gray-400">
+                        <li class="mb-2"><a href="#">Support</a></li>
+                        <li class="mb-2"><a href="#">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="mt-3">
+                    <h1 class="font-semibold text-3xl mb-3 hidden xl:block">Social Media</h1>
+                    <div class="flex gap-6 text-gray-400 justify-center xl:justify-start">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="mt-3 flex justify-center text-gray-400 sm:hidden">
+                    <p>Copyright 2025</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="landingpage.js"></script>
+</body>
+</html>
