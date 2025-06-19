@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME Software Lab</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body class="bg-sky-100">
+    <header class="pb-8">
+        <nav class="flex flex-row justify-between font-medium text-lg pt-3 px-4 fixed top-0 left-0 w-full bg-white shadow py-3 z-10 xl:px-10 sm:gap-14 md:gap-20 lg:gap-14 xl:gap-20 sm:text-sm md:text-lg">
+            <div class="flex flex-row items-center">
+                <h1 class="font-bold text-blue-900">ACME</h1>
+            </div>
+            <div class="block sm:hidden">
+                <h3>Your Tech Software Lab</h3>
+            </div>
+            <div class="hidden lg:flex lg:items-center lg:border-1 lg:border-blue-900 lg:rounded-md lg:block">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass text-gray-700 mr-1 ml-2"></i>
+                </div>
+                <div>
+                    <input class="font-normal text-md outline-none text-gray-700 lg:w-35 xl:w-65" type="text" name="" id="" placeholder="Want to learn?">
+                </div>
+                <div>
+                    <a class="bg-slate-100 rounded-md text-blue-900 py-2 px-2" href="#">Explore <span><i class="fa-solid fa-chevron-down ml-1 text-blue-900"></i></span></a>
+                </div>
+            </div>
+            <ul class="flex flex-row gap-2 items-center sm:gap-3 xl:gap-4">
+                <li><a class="text-blue-900 hidden sm:block" href="index.html">Home</a></li>
+                <li><a class="hover:border-b-2 hover:border-blue-900 hidden sm:block" href="aboutUs.html">About</a></li>
+                <li><a class="hover:border-b-2 hover:border-blue-900 hidden sm:block" href="webDev.html" id="bag">Courses</a></li>
+                <li><a class="hover:border-b-2 hover:border-blue-900 hidden sm:block" href="contactUs.html">Contact Us</a></li>
+                <li><a class="hover:border-b-2 hover:border-blue-900 hidden sm:block" href="blog.html">Blog</a></li>
+            </ul>
+            <div class="flex flex-row items-center hidden sm:block">
+                <a class="hover:border-b-2 hover:border-blue-900 sm:pr-2" href="SignUp.html">Sign Up</a>
+                <button class="bg-blue-900 rounded-md p-2 text-white"><a href="#login.html">Login</a></button>
+            </div>
+            <div class="flex items-center block cursor-pointer sm:hidden">
+                <i id="open" class="fa-solid fa-bars text-blue-900 text-2xl"></i>
+            </div>
+        </nav>
+        <!-- NAVIGATION MOBILE CONTENT -->
+        <div id="dropdownMenu" class="absolute w-full hidden -mt-12 font-semibold bg-slate-100 rounded shadow-lg p-2 py-5 z-20 fixed sm:hidden ">
+            <div class="flex flex-col px-2 py-2">
+                <div class="flex flex-row justify-between">
+                    <div class="flex flex-row items-center">
+                        <h1 class="font-bold text-xl text-blue-900">ACME</h1>
+                    </div>
+                    <div class="flex items-center cursor-pointer">
+                        <i id="close" class="fa-regular fa-x text-3xl"></i>
+                    </div>
+                </div>
+                <ul class="flex flex-col mb-3 mt-3">
+                    <li><a class="hover:text-white hover:bg-blue-900 block hover:rounded-md hover:pl-4 hover:py-1 mb-4" href="index.html">Home</a></li>
+                    <li><a class="hover:text-white hover:bg-blue-900 block hover:rounded-md hover:pl-4 hover:py-1 mb-4" href="aboutUs.html">About</a></li>
+                    <li><a class="hover:text-white hover:bg-blue-900 block hover:rounded-md hover:pl-4 hover:py-1 mb-4" href="webDev.html" id="bag">Courses</a></li>
+                    <li><a class="hover:text-white hover:bg-blue-900 block hover:rounded-md hover:pl-4 hover:py-1 mb-4" href="contactUs.html">Contact Us</a></li>
+                    <li><a class="hover:text-white hover:bg-blue-900 block hover:rounded-md hover:pl-4 hover:py-1 mb-4" href="blog.html">Blog</a></li>
+                </ul>
+                <div class="flex flex-row justify-between border-t-1 border-blue-900 pt-2 items-center">
+                    <a class="hover:text-white hover:bg-blue-900 block hover:rounded-md block hover:p-1 hover:px-3" href="#">SIGN UP</a>
+                    <a class="hover:text-white hover:bg-blue-900 block hover:rounded-md block hover:p-1 hover:px-3" href="#">LOGIN</a>
+                </div>
+            </div>
+        </div>
+        <section class="grid grid-cols-12 mt-12 pt-7 container pb-8 px-4 xl:gap-26 md:pt-8 xl:px-8 xl:mt-16 xl:pt-14">
+            <div class="col-span-12 xl:col-span-6">
+                <h1 class="font-bold text-4xl sm:text-5xl mb-5 text-blue-900">Data Analysis</h1>
+                <div class="font-normal">
+                    <p class="my-4">
+                        At ACME Softwarelab, our Data Analysis Services transform raw data 
+                        into actionable insights to help your business make informed decisions.
+                        We specialize in data collection, cleaning, visualization, and advanced
+                        analystics using the latest tools and technologies.
+                    </p>
+                    <p>
+                        Our team of experienced analysts work closely with you to understand 
+                        your unique challenges and objectives, delivering customized solutions
+                        that drive growth, optimize operations, and enhance customer experience.
+                        Whether it's identifying market trends, improving effeciency, or ehancing 
+                        strategic planning, we provide the insights you need to stay ahead in a 
+                        data-driven world. 
+                    </p>
+                </div>
+                <div class="text-white font-semibold mt-12 mb-2 flex justify-between">
+                    <div class="bg-blue-900 py-3 px-6 rounded-lg inline-block">
+                        <a href="contactUs.html">Contact Us<span><i class="fa-solid fa-arrow-right ml-4"></i></span></a>
+                    </div>
+                    <div class="bg-blue-900 py-3 px-6 rounded-lg inline-block">
+                        <a href="projectDev.html">Next Page<span><i class="fa-solid fa-arrow-right ml-4"></i></span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-sky-50 flex justify-end hidden xl:block xl:col-span-6 xl:w-135">
+                <div>
+                    <div class="flex justify-center">
+                         <img class="w-70 h-38 rounded-lg -mt-4 mb-3 -mr-40" src="Images/webdesign2.jpg" alt="learning image">
+                    </div>
+                    <div>
+                        <img class="w-70 h-40 rounded-lg -ml-6" src="Images/webdesign.jpg" alt="learning image">
+                    </div>
+                    <div class="flex justify-center">
+                        <img class="w-70 h-38 rounded-lg -mb-4 mt-3 -mr-40" src="Images/learning6.jpg" alt="learning image">
+                    </div>
+                </div>                
+            </div>
+        </section>
+    </header>
+
+
+    <script src="landingpage.js"></script>
+</body>
+</html>
