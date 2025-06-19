@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME Software Lab</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+    <header class="bg-sky-100 pb-6">
+        <nav class="flex flex-row justify-between font-medium text-lg pt-3 px-4 fixed top-0 left-0 w-full bg-white shadow py-3 z-10 xl:px-10 sm:gap-14 md:gap-20 lg:gap-14 xl:gap-20 sm:text-sm md:text-lg">
+            <div class="flex flex-row items-center">
+                <h1 class="font-bold text-blue-900">ACME</h1>
+            </div>
+            <div class="block sm:hidden">
+                <h3>Your Tech Software Lab</h3>
+            </div>
+            <div class="hidden lg:flex lg:items-center lg:border-1 lg:border-blue-900 lg:rounded-md lg:block">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass text-gray-700 mr-1 ml-2"></i>
+                </div>
+                <div>
+                    <input class="font-normal text-md outline-none text-gray-700 lg:w-35 xl:w-65" type="text" name="" id="" placeholder="Want to learn?">
+                </div>
+                <div>
+                    <a class="bg-slate-100 rounded-md text-blue-900 py-2 px-2" href="#">Explore <span><i class="fa-solid fa-chevron-down ml-1 text-blue-900"></i></span></a>
+                </div>
+            </div>
+            <ul class="flex flex-row gap-2 items-center sm:gap-3 xl:gap-4">
+                <li><a class="text-blue-900 hidden sm:block" href="index.html">Home</a></li>
+                <li><a class="hover:border-b-2 hover:border-blue-900 hidden sm:block" href="aboutUs.html">About</a></li>
+                <li><a class="hover:border-b-2 hover:border-blue-900 hidden sm:block" href="webDev.html" id="bag">Courses</a></li>
+                <li><a class="hover:border-b-2 hover:border-blue-900 hidden sm:block" href="contactUs.html">Contact Us</a></li>
+                <li><a class="hover:border-b-2 hover:border-blue-900 hidden sm:block" href="blog.html">Blog</a></li>
+            </ul>
+            <div class="flex flex-row items-center hidden sm:block">
+                <a class="hover:border-b-2 hover:border-blue-900 sm:pr-2" href="SignUp.html">Sign Up</a>
+                <button class="bg-blue-900 rounded-md p-2 text-white"><a href="#login.html">Login</a></button>
+            </div>
+            <div class="flex items-center block cursor-pointer sm:hidden">
+                <i id="open" class="fa-solid fa-bars text-blue-900 text-2xl"></i>
+            </div>
+        </nav>
+        <!-- NAVIGATION MOBILE CONTENT -->
+        <div id="dropdownMenu" class="absolute w-full hidden -mt-12 font-semibold bg-slate-100 rounded shadow-lg p-2 py-5 z-20 fixed sm:hidden ">
+            <div class="flex flex-col px-2 py-2">
+                <div class="flex flex-row justify-between">
+                    <div class="flex flex-row items-center">
+                        <h1 class="font-bold text-xl text-blue-900">ACME</h1>
+                    </div>
+                    <div class="flex items-center cursor-pointer">
+                        <i id="close" class="fa-regular fa-x text-3xl"></i>
+                    </div>
+                </div>
+                <ul class="flex flex-col mb-3 mt-3">
+                    <li><a class="hover:text-white hover:bg-blue-900 block hover:rounded-md hover:pl-4 hover:py-1 mb-4" href="index.html">Home</a></li>
+                    <li><a class="hover:text-white hover:bg-blue-900 block hover:rounded-md hover:pl-4 hover:py-1 mb-4" href="aboutUs.html">About</a></li>
+                    <li><a class="hover:text-white hover:bg-blue-900 block hover:rounded-md hover:pl-4 hover:py-1 mb-4" href="webDev.html" id="bag">Courses</a></li>
+                    <li><a class="hover:text-white hover:bg-blue-900 block hover:rounded-md hover:pl-4 hover:py-1 mb-4" href="contactUs.html">Contact Us</a></li>
+                    <li><a class="hover:text-white hover:bg-blue-900 block hover:rounded-md hover:pl-4 hover:py-1 mb-4" href="blog.html">Blog</a></li>
+                </ul>
+                <div class="flex flex-row justify-between border-t-1 border-blue-900 pt-2 items-center">
+                    <a class="hover:text-white hover:bg-blue-900 block hover:rounded-md block hover:p-1 hover:px-3" href="#">SIGN UP</a>
+                    <a class="hover:text-white hover:bg-blue-900 block hover:rounded-md block hover:p-1 hover:px-3" href="#">LOGIN</a>
+                </div>
+            </div>
+        </div>
+        <section class="grid grid-cols-12 mt-12 pt-5 container pb-8 px-4 xl:gap-26 md:pt-8 xl:px-8 xl:mt-16 xl:pt-14">
+            <div class="col-span-12 xl:col-span-6">
+                <h1 class="font-bold text-5xl mb-5 text-blue-900">About Us</h1>
+                <h1 class="font-medium text-3xl">Training and Consulting Company</h1>
+                <div class="font-normal">
+                    <p class="my-4">
+                        At ACME Software Lab, we are passionate about empowering 
+                        individuals and organizations through innovative trainning 
+                        and consulting services. As a leading provider in the 
+                        tech industry, our mission is to bridge the gap between 
+                        technology and talent, helping our clients achieve their 
+                        full potential.
+                    </p>
+                </div>
+            </div>
+            <div class="bg-sky-50 flex justify-end hidden xl:block xl:col-span-6 xl:w-135">
+                <div>
+                    <div class="flex justify-center">
+                         <img class="w-70 h-38 rounded-lg -mt-3 mb-3 -mr-40" src="Images/webdesign2.jpg" alt="learning image">
+                    </div>
+                    <div>
+                        <img class="w-70 h-40 rounded-lg -ml-6 -mb-4" src="Images/webdesign.jpg" alt="learning image">
+                    </div>
+                </div>                
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="grid grid-cols-12 pt-10 container px-4 pb-4 xl:px-8 xl:pt-14">
+            <div class="xl:col-span-6 hidden xl:block w-110 h-100 bg-gray-300">
+                <div>
+                    <img class="w-100 h-100 rounded-md ml-5 -mb-5 mt-5" src="Images/E4.jpg" alt="learning image">
+                </div>              
+            </div>
+            <div class="xl:col-span-6 col-span-12">
+                <h1 class="font-bold text-3xl mb-4 text-blue-900">Our Mission</h1>
+                <div class="font-normal">
+                    <p class="my-4">
+                        At ACME Softwarelab, our mission is simply yet profund to 
+                        cultivate a community of tech-savy professionals equipped 
+                        with the expertise needed to thrive in todays's digital 
+                        landscape. We strive to bridge the gap between theorectical 
+                        knowledge and practical application, ensuring our clients 
+                        are not only well-versed in the latest technologies but 
+                        also capable of implementing them effectively.
+                    </p>
+                </div>
+                <h1 class="font-bold text-3xl mb-4 text-blue-900">What We Offer</h1>
+                <h1 class="font-semibold text-2xl mb-4">1. Comprehensive Training Programs</h1>
+                <p class="font-normal my-2">
+                    Our training programs are designs to catert to a diverse range of needs, 
+                    from beginners seeking foundational skills to experienced professionals 
+                    looking to upskill. We offer courses in:
+                    <ul class="list-disc pl-10">
+                        <li>Software Development</li>
+                        <li>Data Science and Analytics</li>
+                        <li>Cloud Computing</li>
+                        <li>Cybersecurity</li>
+                        <li>Project Management</li>
+                    </ul>
+                </p>
+                <h1 class="font-semibold text-2xl my-4">2. Expert Consulting Services</h1>
+                <p class="font-normal my-2">
+                    Our team of seasoned consultant bring a weath of experience across 
+                    various industries. We provide tailored consulting services to help 
+                    organizations harness the full potential of technology. 
+                    Whether you need strategi advice, project managment, or hands-on 
+                    implementation, ACME Software Lab is your trusted plug.
+            </div>
+        </section>
+        <section class="container px-4 pt-2 xl:pt-3 pb-4 Xl:px-8">
+            <h1 class="flex justify-center font-medium text-4xl">Why Choose Us?</h1>
+            <div class="grid grid-cols-3 gap-4 mt-6">
+                <div class="bg-green-50 p-4 rounded-md">
+                    <div class="mb-3">
+                        <h2 class="text-blue-900 font-semibold text-xl">01</h2>
+                    </div>
+                    <div class="mb-3">
+                        <h2 class="font-semibold text-xl">Expert Instructors</h2>
+                    </div>
+                    <div class="mb-3">
+                        <p>Our courses are led by industry experts with real-world experience</p>
+                    </div>
+                </div>
+                <div class="p-4 rounded-md border border-slate-200">
+                    <div class="mb-3">
+                        <h2 class="text-blue-900 font-semibold text-xl">02</h2>
+                    </div>
+                    <div class="mb-3">
+                        <h2 class="font-semibold text-xl">Flexible Learning</h2>
+                    </div>
+                    <div class="mb-3">
+                        <p>We offer both in-person and online training options to fit your schedule</p>
+                    </div>
+                </div>
+                <div class="bg-green-50 p-4 rounded-md">
+                    <div class="mb-3">
+                        <h2 class="text-blue-900 font-semibold text-xl">03</h2>
+                    </div>
+                    <div class="mb-3">
+                        <h2 class="font-semibold text-xl">Custom Solutions</h2>
+                    </div>
+                    <div class="mb-3">
+                        <p>Our consulting services are tailored to meet your unique business needs</p>
+                    </div>
+                </div>
+                <div class="p-4 border border-slate-200 rounded-md hidden xl:block">
+                    <div class="mb-3">
+                        <h2 class="text-blue-900 font-semibold text-xl">04</h2>
+                    </div>
+                    <div class="mb-3">
+                        <h2 class="font-semibold text-xl">Proven Success</h2>
+                    </div>
+                    <div class="mb-3">
+                        <p>We have a track record of helping individuals and organizations achieve their tech goals</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-900 mt-6 xl:mt-14">
+        <section class="container px-4 p-2 xl:px-8">
+            <div class="grid xl:grid-cols-4 grid-cols-1 mt-5 gap-3 mb-4 pt-0 xl:pt-6 pb-2 text-white">
+                <div class="mt-3 text-center xl:text-start">
+                    <div>
+                        <h1 class="font-bold text-blue-900 text-2xl xl:mb-3 ml-6">ACME</h1>
+                    </div>
+                    <p class="font-normal text-lg text-gray-400">Where your journey towards technological experience begins</p>
+                </div>
+                <div class="mt-3 hidden xl:block">
+                    <h1 class="font-semibold text-3xl mb-3">Quick links</h1>
+                    <ul class="font-normal text-lg text-gray-400">
+                        <li class="mb-2"><a href="aboutUs.html">About Us</a></li>
+                        <li class="mb-2"><a href="#">Our Class</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                        <li class="mb-2"><a href="contactUs.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="mt-3 hidden xl:block">
+                    <h1 class="font-semibold text-3xl mb-3">Resources</h1>
+                    <ul class="font-normal text-lg text-gray-400">
+                        <li class="mb-2"><a href="#">Support</a></li>
+                        <li class="mb-2"><a href="#">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="mt-3">
+                    <h1 class="font-semibold text-3xl mb-3 hidden xl:block">Social Media</h1>
+                    <div class="flex gap-6 text-gray-400 justify-center xl:justify-start">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="mt-3 flex gap-2 justify-center text-gray-400 xl:hidden items-center">
+                    <i class="fa-regular fa-copyright text-sm"></i>
+                    <p>Copyright 2025</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="landingpage.js"></script>
+</body>
+</html>
