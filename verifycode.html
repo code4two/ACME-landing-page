@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME Software Lab</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+    <header class="px-4 lg:px-8 xl:px-8">
+        <nav class="pt-3 flex justify-start font-medium">
+            <div>
+                <h1 class="font-bold text-blue-900 text-xl lg:text-2xl">ACME</h1>
+            </div>
+        </nav>
+        <div class="grid grid-cols-12 lg:gap-8 pt-5">
+            <div class="col-span-12 lg:col-span-6">
+                <div class="flex gap-2 font-semibold mb-3">
+                    <div>
+                        <a href="login.html"><i class="fa-solid fa-arrow-left"></i></a>
+                    </div>
+                    <div>
+                        <a href="login.html">Back to login</a>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-2xl sm:text-4xl font-semibold mb-3">Forgot your password?</h1>
+                    <p class="mb-4 text-gray-600">An authentication code has been sent to your email</p>
+                </div>
+                <form class="mt-4">
+                    <div class="relative mx-w-sm">
+                        <label class="absolute px-1 bg-white text-sm ml-3 -mt-2" for="Name">Enter Code</label>
+                        <input class="border border-gray-500 block py-2 px-4 w-full rounded focus:outline-none" type="password" placeholder="77B9BM6X">
+                        <span class="absolute inset-y-0 right-0 pr-3 flex items-center">
+                            <i class="fa-solid fa-eye-slash text-gray-700"></i>
+                        </span>
+                    </div>
+                </form>
+                <h4 class="py-4">Didn't receive a code? <span class="text-red-500"><a href="#">Resend</a></span></h4>
+                <div class="text-white font-medium bg-blue-900 py-2 rounded-sm">
+                    <a class="flex justify-center" href="setpassword.html">Verify</a>
+                </div>
+            </div>
+            <div class="hidden lg:block lg:col-span-6">
+                <img class="w-full h-125 xl:h-135" src="images/Dance3.jpg" alt="">
+            </div>
+        </div>
+    </header>
+</body>
+</html>
