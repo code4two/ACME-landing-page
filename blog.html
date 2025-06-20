@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME Software Lab</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+    <header class="pb-6">
+        <nav class="flex flex-row justify-between font-medium text-lg pt-3 xl:px-10 px-4 sm:gap-14 md:gap-20 lg:gap-14 xl:gap-20 sm:text-sm md:text-lg fixed top-0 left-0 w-full bg-white shadow py-3 z-10">
+            <div class="flex flex-row items-center">
+                <h1 class="font-bold text-blue-900">ACME</h1>
+            </div>
+            <div class="block sm:hidden">
+                <h3>Your Tech Software Lab</h3>
+            </div>
+            <div class="hidden lg:flex lg:items-center lg:border-1 lg:border-blue-900 lg:rounded-md lg:block">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass text-gray-700 mr-1 ml-2"></i>
+                </div>
+                <div>
+                    <input class="font-normal text-md outline-none text-gray-700 lg:w-35 xl:w-65" type="text" name="" id="" placeholder="Want to learn?">
+                </div>
+                <div>
+                    <a class="bg-slate-100 rounded-md text-blue-900 py-2 px-2" href="#">Explore <span><i class="fa-solid fa-chevron-down ml-1 text-blue-900"></i></span></a>
+                </div>
+            </div>
+            <ul class="flex flex-row gap-2 items-center sm:gap-3 xl:gap-4">
+                <li><a class="text-blue-900 hidden sm:block" href="index.html">Home</a></li>
+                <li><a class="hover:border-b-2 hover:border-blue-900 hidden sm:block" href="aboutUs.html">About</a></li>
+                <li><a class="hover:border-b-2 hover:border-blue-900 hidden sm:block" href="webDev.html" id="bag">Courses</a></li>
+                <li><a class="hover:border-b-2 hover:border-blue-900 hidden sm:block" href="contactUs.html">Contact Us</a></li>
+                <li><a class="hover:border-b-2 hover:border-blue-900 hidden sm:block" href="blog.html">Blog</a></li>
+            </ul>
+            <div class="flex flex-row items-center hidden sm:block">
+                <a class="hover:border-b-2 hover:border-blue-900 sm:pr-2" href="SignUp.html">Sign Up</a>
+                <button class="bg-blue-900 rounded-md p-2 text-white"><a href="login.html">Login</a></button>
+            </div>
+            <div class="flex items-center block cursor-pointer sm:hidden">
+                <i id="open" class="fa-solid fa-bars text-blue-900 text-2xl"></i>
+            </div>
+        </nav>
+        <!-- NAVIGATION MOBILE CONTENT -->
+        <div id="dropdownMenu" class="absolute w-full hidden sm:hidden -mt-6 font-semibold bg-slate-100 rounded shadow-lg p-2 py-5 z-20 fixed">
+            <div class="flex flex-col px-2 py-2">
+                <div class="flex flex-row justify-between">
+                    <div class="flex flex-row items-center">
+                        <h1 class="font-bold text-xl text-blue-900">ACME</h1>
+                    </div>
+                    <div class="flex items-center cursor-pointer">
+                        <i id="close" class="fa-regular fa-x text-3xl"></i>
+                    </div>
+                </div>
+                <ul class="flex flex-col mb-3 mt-3">
+                    <li><a class="hover:text-white hover:bg-blue-900 block hover:rounded-md hover:pl-4 hover:py-1 mb-4" href="index.html">Home</a></li>
+                    <li><a class="hover:text-white hover:bg-blue-900 block hover:rounded-md hover:pl-4 hover:py-1 mb-4" href="aboutUs.html">About</a></li>
+                    <li><a class="hover:text-white hover:bg-blue-900 block hover:rounded-md hover:pl-4 hover:py-1 mb-4" href="webDev.html" id="bag">Courses</a></li>
+                    <li><a class="hover:text-white hover:bg-blue-900 block hover:rounded-md hover:pl-4 hover:py-1 mb-4" href="contactUs.html">Contact Us</a></li>
+                    <li><a class="hover:text-white hover:bg-blue-900 block hover:rounded-md hover:pl-4 hover:py-1 mb-4" href="blog.html">Blog</a></li>
+                </ul>
+                <div class="flex flex-row justify-between border-t-1 border-blue-900 pt-2 items-center">
+                    <a class="hover:text-white hover:bg-blue-900 block hover:rounded-md block hover:p-1 hover:px-3" href="login.html">SIGN UP</a>
+                    <a class="hover:text-white hover:bg-blue-900 block hover:rounded-md block hover:p-1 hover:px-3" href="signUp.html">LOGIN</a>
+                </div>
+            </div>
+        </div>
+        <section class="px-4 xl:px-8 pt-16 sm:pt-22">
+            <div class="text-center">
+                <h1 class="text-md font-medium mb-2">OUR BLOGS</h1>
+                <h1 class="font-semibold text-3xl mb-2">Find all out blogs from here</h1>
+                <p class="font-normal">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptas saepe nobis. 
+                </p>
+                <p>
+                    Deserunt excepturi, perferendis nisi quam quisquam adipisci alias?
+                </p>
+            </div>
+            <div class="flex justify-between mt-6 items-center">
+                <div>
+                    <h1 class="text-2xl sm:text-4xl font-semibold mb-3">Our Recent Post</h1>
+                </div>
+                <div>
+                    <a class="bg-blue-900 rounded-md px-8 py-2 text-white" href="#">View All</a>
+                </div>
+            </div>
+            <div class="grid grid-cols-12 gap-2 lg:gap-6 mt-3 mb-10">
+                <div class="col-span-12 lg:col-span-6">
+                    <img class="rounded-lg lg:h-80 h-60 w-full" src="images/VR1.jpg" alt="gamewithAI">    
+                </div>
+                <div class="col-span-12 lg:col-span-6">
+                    <div>
+                        <div class="flex gap-5 mb-1 lg:mb-3">
+                            <h2 class="font-semibold text-md">DEVELOPMENT</h2>
+                            <p class="text-gray-600 font-semibold">16 March 2023</p>
+                        </div>
+                        <div class="mb-3">
+                            <h1 class="font-semibold text-2xl sm:text-3xl">
+                                How to make a Game look more attractive with New VR & AI Technology
+                            </h1>
+                        </div>
+                        <p class="mb-6 text-gray-700 lg:mb-4 xl:mb-18">
+                            Google has been investing in AI for many years and bringing 
+                            its benefits to individuals, businesses and communities. 
+                            Whether it's publishing state of the art research, 
+                            building helpful products or developing tools and resources that enable others, we're committed to making AI accessible to everyone.
+                        </p>
+                        <div class="border border-1 inline-block rounded-sm border-blue-900">
+                            <a class="font-semibold px-4 py-6 text-blue-900" href="blog2ainews.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 xl:grid-cols-3">
+                <div class="w-45 sm:w-70 md:w-85 lg:w-122 xl:w-99">
+                    <img class="mb-5 w-full rounded-xl" src="Images/Beach1.jpg" alt="computerP">
+                    <div class="flex justify-between">
+                        <h2 class="font-semibold text-md mb-3">Travel</h2>
+                        <p class="text-gray-600 font-semibold">13 March 2023</p>
+                    </div>
+                    <div class="mb-3">
+                        <h1 class="font-semibold text-xl xl:text-2xl">
+                            8 Rules of Traveling In Sea You Need to Know
+                        </h1>
+                    </div>
+                    <p class="mb-3 text-gray-700">
+                        Traveling in sea has many advantages. 
+                        Some of the advantages of transporting goods 
+                        by sea include: you can ship large volume at costs
+                    </p>
+                    <div>
+                        <a class="text-blue-900 underline font-bold" href="#">Read More...</a>
+                    </div>
+                </div>
+                <div class="w-45 sm:w-70 md:w-85 lg:w-122 xl:w-99">
+                    <img class="mb-5 w-full rounded-xl" src="Images/webdesign2.jpg" alt="computerP">
+                    <div class="flex justify-between">
+                        <h2 class="font-semibold text-md mb-3">Tech</h2>
+                        <p class="text-gray-600 font-semibold">11 March 2023</p>
+                    </div>
+                    <div class="mb-3">
+                        <h1 class="font-semibold text-xl xl:text-2xl">
+                            How to build a strong portfolio and get a job
+                        </h1>
+                    </div>
+                    <p class="mb-3 text-gray-700">
+                        Capitalize on low hanging fruits to identify ballpark value added 
+                        activity to beta test. Override the digital divide with additional <span class="hidden lg:block xl:hidden">edge in the</span> 
+                    </p>
+                    <div>
+                        <a class="text-blue-900 underline font-bold" href="#">Read More...</a>
+                    </div>
+                </div>
+                <div class="w-99 hidden xl:block">
+                    <img class="mb-5 w-full rounded-xl" src="Images/football2.jpg" alt="computerP">
+                    <div class="flex justify-between">
+                        <h2 class="font-semibold text-md mb-3">Sports</h2>
+                        <p class="text-gray-600 font-semibold">10 March 2023</p>
+                    </div>
+                    <div class="mb-3">
+                        <h1 class="font-semibold text-xl xl:text-2xl">
+                            How to Be a Professional Footballer in 2023
+                        </h1>
+                    </div>
+                    <p class="mb-3 text-gray-700">
+                        Organically grow the holistic world view of disruptive 
+                        innovation via workplace diversity and empowerment. 
+                        Survival strategies to ensure proactive
+                    </p>
+                    <div>
+                        <a class="text-blue-900 underline font-bold" href="#">Read More...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between mb-4 mt-8 items-center">
+                <div>
+                    <h1 class="text-2xl sm:text-4xl font-semibold mb-3">Popular Post</h1>
+                </div>
+                <div>
+                    <a class="bg-blue-900 rounded-md px-8 py-2 text-white" href="#">View All</a>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 xl:grid-cols-3">
+                <div class="w-45 sm:w-70 md:w-85 lg:w-122 xl:w-99">
+                    <img class="mb-5 w-full rounded-xl" src="Images/Beach1.jpg" alt="computerP">
+                    <div class="flex justify-between">
+                        <h2 class="font-semibold text-md mb-3">Travel</h2>
+                        <p class="text-gray-600 font-semibold">11 March 2023</p>
+                    </div>
+                    <div class="mb-3">
+                        <h1 class="font-semibold text-xl xl:text-2xl">
+                            Train or Bus Journey? Which one suits?
+                        </h1>
+                    </div>
+                    <p class="mb-2 text-gray-700">
+                        The choice between train or bus journey depends on various 
+                        factos such as distance of the journey, the time available, 
+                        the cost, and...
+                    </p>
+                    <div>
+                        <a class="text-blue-900 underline font-bold" href="#">Read More...</a>
+                    </div>
+                </div>
+                <div class="w-45 sm:w-70 md:w-85 lg:w-122 xl:w-99">
+                    <img class="mb-5 w-full rounded-xl" src="Images/webdesign.jpg" alt="computerP">
+                    <div class="flex justify-between">
+                        <h2 class="font-semibold text-md mb-3">Tech</h2>
+                        <p class="text-gray-600 font-semibold">11 March 2023</p>
+                    </div>
+                    <div class="mb-3">
+                        <h1 class="font-semibold text-xl xl:text-2xl">
+                            Best Website to research for your next project
+                        </h1>
+                    </div>
+                    <p class="mb-2 text-gray-700">
+                        Capitalize on low hanging fruits to identify ballpark value added 
+                        activity to beta test. Override the digital divide with additional <span class="hidden lg:block xl:hidden">edge in the</span> 
+                    </p>
+                    <div>
+                        <a class="text-blue-900 underline font-bold" href="#">Read More...</a>
+                    </div>
+                </div>
+                <div class="w-99 hidden xl:block">
+                    <img class="mb-5 w-full rounded-xl" src="Images/sing1.jpg" alt="computerP">
+                    <div class="flex justify-between">
+                        <h2 class="font-semibold text-md mb-3">Entertainment</h2>
+                        <p class="text-gray-600 font-semibold">10 March 2023</p>
+                    </div>
+                    <div class="mb-3">
+                        <h1 class="font-semibold text-xl xl:text-2xl">
+                            How to Be a Dancer in 2023 with proper skills
+                        </h1>
+                    </div>
+                    <p class="mb-2 text-gray-700">
+                        Organically grow the holistic world view of disruptive 
+                        innovation via workplace diversity and empowerment. 
+                        Survival strategies to ensure proactive
+                    </p>
+                    <div>
+                        <a class="text-blue-900 underline font-bold" href="#">Read More...</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 mt-5 xl:grid-cols-3">
+                <div class="w-45 sm:w-70 md:w-85 lg:w-122 xl:w-99">
+                    <img class="mb-5 w-full rounded-xl" src="Images/sing1.jpg" alt="computerP">
+                    <div class="flex justify-between">
+                        <h2 class="font-semibold text-md mb-3">Music</h2>
+                        <p class="text-gray-600 font-semibold">13 March 2023</p>
+                    </div>
+                    <div class="mb-3">
+                        <h1 class="font-semibold text-xl xl:text-2xl">
+                            Who is the best singer on chart? Know him?
+                        </h1>
+                    </div>
+                    <p class="mb-2 text-gray-700">
+                        Chart by Billboard which ranks the 
+                        all-time greatest artist based on their performance 
+                        on the weekly Billboard Hot 100 and...
+                    </p>
+                    <div>
+                        <a class="text-blue-900 underline font-bold" href="#">Read More...</a>
+                    </div>
+                </div>
+                <div class="w-45 sm:w-70 md:w-85 lg:w-122 xl:w-99">
+                    <img class="mb-5 w-full rounded-xl" src="Images/train2.jpg" alt="computerP">
+                    <div class="flex justify-between">
+                        <h2 class="font-semibold text-md mb-3">Travel</h2>
+                        <p class="text-gray-600 font-semibold">11 March 2023</p>
+                    </div>
+                    <div class="mb-3">
+                        <h1 class="font-semibold text-xl xl:text-2xl">
+                            How to start export import business from home?
+                        </h1>
+                    </div>
+                    <p class="mb-2 text-gray-700">
+                        Capitalize on low hanging fruits to identify ballpark value added 
+                        activity to beta test. Override the digital divide with additional <span class="hidden lg:block xl:hidden">edge in the</span> 
+                    </p>
+                    <div>
+                        <a class="text-blue-900 underline font-bold" href="#">Read More...</a>
+                    </div>
+                </div>
+                <div class="w-99 hidden xl:block">
+                    <img class="mb-5 w-full rounded-xl" src="Images/Beach3.jpg" alt="computerP">
+                    <div class="flex justify-between">
+                        <h2 class="font-semibold text-md mb-3">Sports</h2>
+                        <p class="text-gray-600 font-semibold">10 March 2023</p>
+                    </div>
+                    <div class="mb-3">
+                        <h1 class="font-semibold text-xl xl:text-2xl">
+                            Make some drinks with chocolates and milk
+                        </h1>
+                    </div>
+                    <p class="mb-2 text-gray-700">
+                        Organically grow the holistic world view of disruptive 
+                        innovation via workplace diversity and empowerment. 
+                        Survival strategies to ensure proactive
+                    </p>
+                    <div>
+                        <a class="text-blue-900 underline font-bold" href="#">Read More...</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="bg-blue-900 mb-8 mt-12">
+        <section class="px-4 xl:px-8">
+            <div class="text-white text-center py-10">
+                <div class="font-semibold text-2xl sm:text-3xl">
+                    <h1>Get our blog posts delivered</h1>
+                    <h1>to your inbox weekly</h1>
+                </div>
+                <div class="border-1 border-blue-900 rounded-md py-2 px-1 mt-4">
+                    <input class="font-normal text-lg outline-none border border-2 bg-white w-50 md:w-70 px-6 py-2 text-gray-700 rounded-md" type="text" name="" id="" placeholder="Your Email">
+                    <a class="bg-blue-900 rounded-md font-semibold px-6 py-2 text-white border border-2 rounded-md" href="#">Get Started</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-gray-900 xl:my-10">
+        <section class="container px-4 p-2 xl:px-8">
+            <div class="grid xl:grid-cols-4 grid-cols-1 mt-5 gap-3 mb-4 pt-0 xl:pt-6 pb-2 text-white">
+                <div class="mt-3 text-center xl:text-start">
+                    <div>
+                        <h1 class="font-bold text-blue-900 text-2xl xl:mb-3 ml-6">ACME</h1>
+                    </div>
+                    <p class="font-normal text-lg text-gray-400">Where your journey towards technological experience begins</p>
+                </div>
+                <div class="mt-3 hidden xl:block">
+                    <h1 class="font-semibold text-3xl mb-3">Quick links</h1>
+                    <ul class="font-normal text-lg text-gray-400">
+                        <li class="mb-2"><a href="aboutUs.html">About Us</a></li>
+                        <li class="mb-2"><a href="#">Our Class</a></li>
+                        <li class="mb-2"><a href="blog.html">Blog</a></li>
+                        <li class="mb-2"><a href="contactUs.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="mt-3 hidden xl:block">
+                    <h1 class="font-semibold text-3xl mb-3">Resources</h1>
+                    <ul class="font-normal text-lg text-gray-400">
+                        <li class="mb-2"><a href="#">Support</a></li>
+                        <li class="mb-2"><a href="#">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="mt-3">
+                    <h1 class="font-semibold text-3xl mb-3 hidden xl:block">Social Media</h1>
+                    <div class="flex gap-6 text-gray-400 justify-center xl:justify-start">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/company/acme-software-lab/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="mt-3 flex gap-2 justify-center text-gray-400 xl:hidden items-center">
+                    <i class="fa-regular fa-copyright text-sm"></i>
+                    <p>Copyright 2025</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+
+    <script src="landingpage.js"></script>
+</body>
+</html>
