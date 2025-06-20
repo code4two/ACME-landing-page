@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACME Software Lab</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+</head>
+<body>
+    <header class="px-4 lg:px-8 xl:px-8">
+        <nav class="pt-3 flex justify-end font-medium">
+            <div>
+                <h1 class="font-bold text-blue-900 text-xl lg:text-2xl">ACME</h1>
+            </div>
+        </nav>
+        <div class="grid grid-cols-12 lg:gap-8 pb-2">
+            <div class="hidden lg:block lg:col-span-6">
+                <img class="w-full h-135 xl:h-140" src="images/Dance1.jpg" alt="">
+            </div>
+            <div class="col-span-12 lg:col-span-6">
+                <div>
+                    <h1 class="text-2xl sm:text-4xl font-semibold mb-2">Sign up</h1>
+                    <p class="mb-4 text-gray-600">Let's get you all set up so you can access your personal account</p>
+                </div>
+                <form>
+                    <div class="flex flex-col gap-3 mb-3">
+                        <div class="relative">
+                            <label class="absolute px-1 bg-white text-sm ml-3 -mt-2" for="Name">First Name</label>
+                            <input class="border border-gray-500 block py-1 px-4 w-full rounded focus:outline-none" type="text">
+                        </div>
+                        <div class="relative">
+                            <label class="absolute px-1 bg-white text-sm ml-3 -mt-2" for="Name">Last Name</label>
+                            <input class="border border-gray-500 block py-1 px-4 w-full rounded focus:outline-none" type="text">
+                        </div>
+                    </div>
+                        <div class="flex flex-col gap-3 mb-3">
+                        <div class="relative">
+                        <label class="absolute px-1 bg-white text-sm ml-3 -mt-2" for="Name">Email</label>
+                            <input class="border border-gray-500 block py-1 px-4 w-full rounded focus:outline-none" type="email" placeholder="johndoe@gmail.com">
+                        </div>
+                        <div class="relative">
+                            <label class="absolute px-1 bg-white text-sm ml-3 -mt-2" for="Name">Phone Number</label>
+                            <input class="border border-gray-500 block py-1 px-4 w-full rounded focus:outline-none" type="numbers">
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 mb-3">
+                        <div class="relative mx-w-sm">
+                            <label class="absolute px-1 bg-white text-sm ml-3 -mt-2" for="Name">Password</label>
+                            <input class="border border-gray-500 block py-1 px-4 w-full rounded focus:outline-none" type="password">
+                            <span class="absolute inset-y-0 right-0 pr-3 flex items-center">
+                                <i class="fa-solid fa-eye-slash text-gray-700"></i>
+                            </span>
+                        </div>
+                        <div class="relative">
+                            <label class="absolute px-1 bg-white text-sm ml-3 -mt-2" for="Name">Confirm Password</label>
+                            <input class="border border-gray-500 block py-1 px-4 w-full rounded focus:outline-none" type="password">
+                            <span class="absolute inset-y-0 right-0 pr-3 flex items-center">
+                                <i class="fa-solid fa-eye-slash text-gray-700"></i>
+                            </span>
+                        </div>
+                    </div>
+                </form>
+                <div class="flex gap-2">
+                    <div>
+                        <input type="checkbox" name="agree">
+                    </div>
+                    <div>
+                        <p>I agree to all the <span class="text-red-500"><a href="#">Terms</a></span> and <span class="text-red-500"><a href="#">Property Policies</a></span></p>
+                    </div>
+                </div>
+                <div class="text-white font-medium bg-blue-900 py-2 rounded-sm my-2">
+                    <a class="flex justify-center" href="#">Create account</a>
+                </div>
+                <div class="text-center">
+                    <h4>Already have an account? <span class="text-red-500"><a href="login.html">Login</a></span></h4>
+                    <div class="relative mt-4">
+                        <p class="border-t-1 text-gray-400"></p>
+                        <div class="flex justify-center">
+                            <p class="text-gray-500 px-1 bg-white -mt-3 absolute">Or Sign up with</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-row justify-between mt-7 w-full">
+                    <div class="border border-blue-900 px-13 sm:px-23 md:px-28 lg:px-17 xl:px-22 py-1 rounded-sm">
+                        <a href="#"><i class="fa-brands fa-facebook text-blue-900"></i></a>
+                    </div>
+                    <div class="border border-blue-900 px-14 sm:px-23 md:px-28 lg:px-17 xl:px-22 py-1 rounded-sm">
+                        <a href="#"><i class="fa-brands fa-google text-red-900"></i></a>
+                    </div>
+                    <div class="border border-blue-900 px-13 sm:px-23 md:px-28 lg:px-17 xl:px-22 py-1 rounded-sm">
+                        <a href="#"><i class="fa-brands fa-apple"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
